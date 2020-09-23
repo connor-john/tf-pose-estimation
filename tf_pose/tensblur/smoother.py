@@ -1,6 +1,3 @@
-# vim: sta:et:sw=2:ts=2:sts=2
-# Written by Antonio Loquercio
-
 import numpy as np
 import scipy.stats as st
 import pdb
@@ -93,7 +90,7 @@ class Smoother(object):
             c_i = input.get_shape().as_list()[3]
         # Convolution for a given input and kernel
         convolve = lambda i, k: tf.nn.depthwise_conv2d(i, k, [1, 1, 1, 1], padding=padding)
-        with tf.variable_scope(name) as scope:
+        with tf.compat.v1.variable_scope(name) as scope:
             kernel = self.make_gauss_var('gauss_weight', self.filter_size, self.sigma, c_i)
             output = convolve(input, kernel)
         return output

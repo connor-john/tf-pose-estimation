@@ -118,3 +118,9 @@ models/pretrained/resnet_v2_101/train.graph
 src/pafprocess/pafprocess.py
 src/pafprocess/pafprocess_wrap.cpp
 src/pafprocess/pafprocess_wrap.cxx
+
+# my customs
+videos/*
+images/*
+swigwin-4.0.2/*
+tf_pose/pafprocess/pafprocess_wrap.cxx
