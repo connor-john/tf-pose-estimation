@@ -1,8 +1,13 @@
-# tf-pose-estimation
+## Fork Changes
+
+- Working in Tensorflow 2.0 environment
+- Reworked run scripts 
+
+# tf-pose-estimation (Original ReadMe)
 
 'Openpose', human pose estimation algorithm, have been implemented using Tensorflow. It also provides several variants that have some changes to the network structure for **real-time processing on the CPU or low-power embedded devices.**
 
-**You can even run this on your macbook with a descent FPS!**
+**You can even run this on your macbook with a decent FPS!**
 
 Original Repo(Caffe) : https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
